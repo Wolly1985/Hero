@@ -351,7 +351,7 @@ extension HeroContext {
       }
     }
   }
-  internal func removeSnapshots(rootView: UIView) {
+  func removeSnapshots(rootView: UIView) {
     if let snapshot = snapshotViews[rootView] {
       if rootView != snapshot {
         snapshot.removeFromSuperview()
